@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin OLIUP</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <section id="sidebar">
+        <div class="sb-head">
+            <a href="" class="brand">
+                <i class='bx bx-smile'></i>
+                <span class="text">OLIUP</span>
+            </a>
+        </div>
+
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-list-plus'></i>
+                    <span class="text">Ajouter des employés</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="text">Listes des employés</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-message-square-minus'></i>
+                    <span class="text">Bannir des employés</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bxs-message-square-edit'></i>
+                    <span class="text">Editer les employés</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-show'></i>
+                    <span class="text">Consulter la presence</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="side-menu">
+            <li>
+                <a href="">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Profil</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-cog'></i>
+                    <span class="text">Paramètres</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="logout">
+                    <i class='bx bx-log-out'></i>
+                    <span class="text">Déconnexion</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!--End sidebar -->
+
+    <!-- content -->
+    <section id="content">
+        <!-- navbar -->
+        <nav>
+            <i class='bx bx-menu'>Menu</i>
+            <a href="" class="nav-link">Categories</a>
+            <form action="" method="post">
+                <div class="form-input">
+                    <input type="search" name="" id="" placeholder="Recherche...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i>
+                    </button>
+                </div>
+            </form>
+            <input type="checkbox" name="" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="" class="notification">
+                <i class='bx bx-bell'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="" class="profile">
+                <img src="img/person.png">
+            </a>
+        </nav>
+        <!--End navbar -->
+
+        <!-- main -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Download PDF</span>
+                </a>
+            </div>
+            <ul class="box-info">
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <h3>102</h3>
+                        <p>Nombre d'employés</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <h3>54</h3>
+                        <p>Nombre d'employés présents</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <h3>48</h3>
+                        <p>Nombre d'employés absents</p>
+                    </span>
+                </li>
+            </ul>
+
+            <div class="table-data">
+                <div class="order">
+                    <div class="head">
+                        <h3>Listes des employés présents</h3>
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nom et Prénom</th>
+                                <th>Date & Heure</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Joel Prince</td>
+                                <td>24/04/2025 9h</td>
+                                <td><span class="status absent">Absent</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Joel Prince</td>
+                                <td>24/04/2025 9h</td>
+                                <td><span class="status present">Présent</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Joel Prince</td>
+                                <td>24/04/2025 9h</td>
+                                <td><span class="status present">Présent</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Joel Prince</td>
+                                <td>24/04/2025 9h</td>
+                                <td><span class="status absent">Absent</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Joel Prince</td>
+                                <td>24/04/2025 9h</td>
+                                <td><span class="status absent">Absent</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+        <!-- End main -->
+    </section>
+    <!-- End content -->
+</body>
+
+</html>
