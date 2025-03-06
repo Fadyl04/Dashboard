@@ -27,25 +27,6 @@ menuBar.addEventListener('click', function () {
 	}
 });
 
-/* menuBar.addEventListener('click', function(){
-	function sidebarAnimate () {
-		let position = 0;
-		if (position < 280) {
-			position += 280;
-			if (sidebar.style.display === "none") {
-				sidebar.style.display = "block";
-				content.style.width = `calc(100% - ${position}px)`;
-				content.style.left = `${position}px`;
-			} else {
-				sidebar.style.display = "none";
-				content.style.width = "calc(100% - 0px)";
-				content.style.left = "0";
-			}
-		}
-	}
-	requestAnimationFrame(sidebarAnimate());
-}); */
-
 const searchButton = document.querySelector('#content nav form .form-input button');
 const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
 const searchForm = document.querySelector('#content nav form');
@@ -79,21 +60,3 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-	const passwordInput = document.getElementById("password");
-	const togglePassword = document.getElementById("togglePassword");
-  
-	togglePassword.addEventListener("click", function () {
-	  if (passwordInput.type === "password") {
-		passwordInput.type = "text";
-		togglePassword.classList.remove("bx-hide");
-		togglePassword.classList.add("bx-show");
-	  } else {
-		passwordInput.type = "password";
-		togglePassword.classList.remove("bx-show");
-		togglePassword.classList.add("bx-hide");
-	  }
-	});
-  });
-  
