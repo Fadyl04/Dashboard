@@ -634,7 +634,7 @@ body {
 /* Show password */
 .password-container {
   position: relative;
-  width: 100%;
+  
 }
 .toggle-password {
   position: absolute;

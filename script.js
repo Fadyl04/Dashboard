@@ -80,17 +80,20 @@ switchMode.addEventListener('change', function () {
 	}
 });
 
-document.getElementById("togglePassword").addEventListener("click", function() {
-	let passwordField = document.getElementById("password");
-	let toggleIcon = this;
-
-	if (passwordField.type === "password") {
-		passwordField.type = "text";
-		toggleIcon.classList.remove("bx-hide");
-		toggleIcon.classList.add("bxs-show"); // Changer l'icône
-	} else {
-		passwordField.type = "password";
-		toggleIcon.classList.remove("bxs-show");
-		toggleIcon.classList.add("bx-hide"); // Revenir à l'icône cachée
-	}
-});
+document.addEventListener("DOMContentLoaded", function () {
+	const passwordInput = document.getElementById("password");
+	const togglePassword = document.getElementById("togglePassword");
+  
+	togglePassword.addEventListener("click", function () {
+	  if (passwordInput.type === "password") {
+		passwordInput.type = "text";
+		togglePassword.classList.remove("bx-hide");
+		togglePassword.classList.add("bx-show");
+	  } else {
+		passwordInput.type = "password";
+		togglePassword.classList.remove("bx-show");
+		togglePassword.classList.add("bx-hide");
+	  }
+	});
+  });
+  
